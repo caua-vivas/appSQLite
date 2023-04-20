@@ -64,7 +64,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         Cursor cursor = DB.rawQuery("Select * from Medicamentos where nome = ?", new String[] {nome});
         if(cursor.getCount() > 0) {
-            long result = DB.delete("Medicamentos", "name = ?", new String[] {nome});
+            long result = DB.delete("Medicamentos", "nome = ?", new String[] {nome});
             return result != -1;
         } else {
             return false;
