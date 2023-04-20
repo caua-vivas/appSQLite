@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulotxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insira os dados"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nome_do_medicamento"
+        android:textSize="24dp"
+        android:layout_below="@+id/titulotxt"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/frequencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/frequ_ncia"
+        android:textSize="24dp"
+        android:layout_below="@+id/nome"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/dosagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dosagem"
+        android:textSize="24dp"
+        android:layout_below="@+id/frequencia"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/horario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hor_rio"
+        android:textSize="24dp"
+        android:layout_below="@+id/dosagem"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="@string/insira_os_dados"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/horario"/>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="@string/atualize_os_dados"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnInsert"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="@string/apague_os_dados"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnUpdate"/>
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="@string/verificar_os_dados"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnDelete"/>
+</RelativeLayout>

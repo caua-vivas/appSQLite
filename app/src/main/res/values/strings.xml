@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SQLite App</string>
+    <string name="nome_do_medicamento">Nome do medicamento</string>
+    <string name="frequ_ncia">Frequência</string>
+    <string name="dosagem">Dosagem</string>
+    <string name="hor_rio">Horário</string>
+    <string name="insira_os_dados">Insira os dados</string>
+    <string name="atualize_os_dados">Atualize os dados</string>
+    <string name="apague_os_dados">Apague os dados</string>
+    <string name="verificar_os_dados">Verificar os dados</string>
+</resources>
